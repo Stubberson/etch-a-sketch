@@ -21,7 +21,9 @@ function createGrid(dimensions = 16) {
 // Create the first 16x16 grid
 createGrid()
 
+// Define custom grid dimensions
 const button = document.querySelector('button')
+button.focus()
 button.addEventListener('click', () => {
     let dims = prompt('How many rows would you like in the square grid?', '1-100')
     if (dims === null) return  // Escape if user cancels the prompt
