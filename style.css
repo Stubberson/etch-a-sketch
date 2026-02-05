@@ -37,5 +37,6 @@ button {
 
 /* The etch in the sketch */
 .highlight {
-    background-color: rgba(30, 17, 198);
+    background-color: rgb(30, 17, 198);
+    opacity: var(--highlight-opacity, 0);
 }

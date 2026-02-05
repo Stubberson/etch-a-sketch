@@ -3,6 +3,12 @@ const container = document.querySelector('.container')
 function hoverHighlight(square) {
     square.addEventListener('mouseover', (event) => {
         event.target.classList.add('highlight')
+
+        // Add to opacity
+        let currentOpacity = parseFloat(getComputedStyle(event.target).opacity)
+        currentOpacity += 0.1
+        event.target.style.setProperty('--highlight-opacity', currentOpacity)
+        console.log(currentOpacity)
     })
 }
 
