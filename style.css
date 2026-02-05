@@ -12,12 +12,18 @@
     margin-top: 12px;
 }
 
+.button {
+    margin: 12px 0;
+    justify-self: center;
+}
+
+/* Rows */
 .container div {
     display: flex;
     flex-grow: 1;
 }
 
-/* The squares within each column */
+/* The squares within each row */
 .container div div {
     flex-grow: 1;
     border: 1px dotted black;
