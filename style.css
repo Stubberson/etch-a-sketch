@@ -3,6 +3,27 @@
     padding: 0;
 }
 
-p {
-    color: red;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 360px;
+    height: 360px;
+    margin-top: 12px;
+}
+
+.container div {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* The squares within each column */
+.container div div {
+    flex-grow: 1;
+    border: 1px dotted black;
+}
+
+/* The etch in the sketch */
+.highlight {
+    background-color: rgba(30, 17, 198, 0.612);
 }
