@@ -8,7 +8,6 @@ function hoverHighlight(square) {
         let currentOpacity = parseFloat(getComputedStyle(event.target).opacity)
         currentOpacity += 0.1
         event.target.style.setProperty('--highlight-opacity', currentOpacity)
-        console.log(currentOpacity)
     })
 }
 
