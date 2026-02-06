@@ -6,5 +6,5 @@ Started as an etch-a-sketch following [The Odin Project](https://www.theodinproj
 * Clear canvas
 * Color picker
 
-> [!note] Technologies
-> HTML5, CSS3, JavaScript
+> [!note] 
+> Technologies used: HTML5, CSS3, JavaScript
