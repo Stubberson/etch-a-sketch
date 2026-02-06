@@ -12,15 +12,43 @@
     margin-top: 12px;
 }
 
-.button {
+.settings {
     display: flex;
     margin: 12px 0;
     width: 360px;
     justify-self: center;
+    gap: 4px;
 }
 
-button {
+button.dimensions {
     flex-grow: 1;
+    margin-right: 8px;
+}
+
+button.color {
+    width: var(--button-width);
+    border: none;
+}
+
+button.color:hover {
+    opacity: 0.5;
+    border: 1px solid white;
+}
+
+button.color#black {
+    background-color: black;
+}
+
+button.color#red {
+    background-color: red;
+}
+
+button.color#green {
+    background-color: green;
+}
+
+button.color#blue {
+    background-color: blue;
 }
 
 /* Grid rows */
@@ -37,6 +65,6 @@ button {
 
 /* The etch in the sketch */
 .highlight {
-    background-color: rgb(30, 17, 198);
+    background-color: var(--highlight-color, black);
     opacity: var(--highlight-opacity, 0);
 }
