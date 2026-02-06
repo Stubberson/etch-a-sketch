@@ -1,6 +1,6 @@
 const container = document.querySelector('.container')
 
-// Customize grid button
+// Custom grid button
 const button = document.querySelector('button')
 button.focus()
 
@@ -9,7 +9,7 @@ const colorButtons = document.querySelectorAll('.color')
 const buttonHeight = getComputedStyle(colorButtons.item(0))['height']
 let chosenColor = null
 
-// Hover highlights a grid square
+// Hover colors a grid square
 function hoverHighlight(square) {
     square.addEventListener('mouseover', (event) => {
         event.target.classList.add('highlight')
@@ -21,14 +21,14 @@ function hoverHighlight(square) {
 
         // Mix colors
         let currentColor = getComputedStyle(event.target)['background-color']
-        let currentColorValues = currentColor.match(/\d+/g)  // Parses the RGB for (d)igits (g)lobally
+        let currentColorValues = currentColor.match(/\d+/g)  // Parses the rgb string for (d)igits (g)lobally
         let [r, g, b] = currentColorValues.map(Number)  // Turn to numbers
         
         // No need to mix if no color is changed
         if (chosenColor !== null) {
             let chosenColorValues = chosenColor.match(/\d+/g)
             let [cr, cg, cb] = chosenColorValues.map(Number)
-            let combination = `rgb(${cr - r}, ${cg - g}, ${cb - b})`
+            let combination = `rgb(${0.1 * cr + r}, ${0.1 * cg + g}, ${0.1 * cb + b})`
             event.target.style.setProperty('--highlight-color', combination)
         }
     })
