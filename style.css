@@ -3,29 +3,44 @@
     padding: 0;
 }
 
-h1, p {
+:root {
+    --max-width: 360px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
     margin: 12px 0;
+    width: var(--max-width);
+}
+
+h1 {
     text-align: center;
+}
+
+p {
+    margin-top: 12px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    width: 360px;
-    height: 360px;
+    width: var(--max-width);
+    height: var(--max-width);
     margin-top: 12px;
 }
 
 .settings {
     display: flex;
     margin: 12px 0;
-    width: 360px;
+    width: var(--max-width);
     justify-self: center;
     gap: 4px;
 }
 
-button.dimensions {
+button.dimensions, button.clear {
     flex-grow: 1;
     margin-right: 8px;
 }
@@ -72,4 +87,17 @@ button.color#blue {
 .highlight {
     background-color: var(--highlight-color, black);
     opacity: var(--highlight-opacity, 0);
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-top: 48px;
+    width: var(--max-width);
+}
+
+img {
+    width: 100px;
 }
