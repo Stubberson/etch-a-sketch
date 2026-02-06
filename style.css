@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+h1, p {
+    margin: 12px 0;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
