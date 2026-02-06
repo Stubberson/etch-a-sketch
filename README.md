@@ -1,4 +1,2 @@
-# Etch-a-sketch
-Etch-a-sketch sim following [The Odin Project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch).
-
-A little demo of my etch-a-sketch:
+# RGB Model Simulation
+Started as an etch-a-sketch following [The Odin Project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch), but turned into an RGB simulation.
