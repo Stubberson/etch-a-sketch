@@ -84,7 +84,7 @@ clearButton.addEventListener('click', () => {
 
 // Change color
 colorButtons.forEach( btn => {
-    btn.style.setProperty('--button-width', buttonHeight)  // First set height
+    btn.style.setProperty('--button-width', buttonHeight)
     btn.addEventListener('click', () => {
         chosenColor = getComputedStyle(btn)['background-color']
     })
