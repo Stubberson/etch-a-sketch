@@ -43,14 +43,40 @@ p {
     gap: 4px;
 }
 
-button.dimensions, button.clear {
+.slidecontainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+}
+
+.slider {
+    appearance: none;
+    background: rgb(239, 239, 239);
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--active-color, black);
+    cursor: pointer;
+}
+
+label {
+    font-size: 12px;
+    text-align: center;
+}
+
+button.clear {
     flex-grow: 1;
     margin-right: 8px;
+    cursor: pointer;
 }
 
 button.color {
     width: var(--button-width);
     border: none;
+    cursor: pointer;
 }
 
 button.color:hover {

@@ -16,7 +16,10 @@
         </p>
     </div>
     <div class="settings">
-        <button class="dimensions">Canvas Resolution</button>
+        <div class="slidecontainer">
+            <input type="range" name="resolution" min="1" max="100" value="16" class="slider">
+            <label for="resolution">Canvas Resolution</label>
+        </div>
         <button class="clear">Clear</button>
         <button class="color" id="black"></button>
         <button class="color" id="red"></button>

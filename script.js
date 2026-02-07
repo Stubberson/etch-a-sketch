@@ -1,12 +1,8 @@
 const container = document.querySelector('.container')
 
-// Custom canvas/grid button
-const canvasButton = document.querySelector('.dimensions')
-canvasButton.focus()
-
+const slider = document.querySelector('.slider')
 const clearButton = document.querySelector('.clear')
 
-// Color buttons
 const colorButtons = document.querySelectorAll('.color')
 const buttonHeight = getComputedStyle(colorButtons.item(0))['height']
 let chosenColor = 'rgb(0, 0, 0)'  // Default value as black for an additive color system
@@ -61,9 +57,9 @@ function clearCanvas() {
 }
 
 // Custom canvas dimensions
-canvasButton.addEventListener('click', () => {
+slider.addEventListener('click', (event) => {
     let reso = rows.length
-    reso = prompt(`How many rows would you like for the square canvas?\nCurrent canvas is ${reso}x${reso}.`, '1-100')
+    reso = event.target.value
     if (reso === null) return  // Escape if user cancels the prompt
     
     // Make sure proper input is given
@@ -87,5 +83,6 @@ colorButtons.forEach( btn => {
     btn.style.setProperty('--button-width', buttonHeight)
     btn.addEventListener('click', () => {
         chosenColor = getComputedStyle(btn)['background-color']
+        slider.style.setProperty('--active-color', chosenColor)
     })
 })
