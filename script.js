@@ -58,10 +58,8 @@ function clearCanvas() {
 
 // Custom canvas dimensions
 slider.addEventListener('click', (event) => {
-    let reso = rows.length
-    reso = event.target.value
     clearCanvas()
-    createCanvas(reso)
+    createCanvas(event.target.value)
 })
 
 clearButton.addEventListener('click', () => {
