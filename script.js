@@ -60,14 +60,6 @@ function clearCanvas() {
 slider.addEventListener('click', (event) => {
     let reso = rows.length
     reso = event.target.value
-    if (reso === null) return  // Escape if user cancels the prompt
-    
-    // Make sure proper input is given
-    while (isNaN(reso) || reso < 1 || reso > 100) {
-        reso = prompt('Unsuitable input given, try again.', '1-100')
-        if (reso === null) return
-    }
-
     clearCanvas()
     createCanvas(reso)
 })
