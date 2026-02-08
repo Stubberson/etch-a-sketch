@@ -1,6 +1,0 @@
-To-do:
-- Publish through GitHub
-- Make a nicer canvas resolution changer. Slider perhaps...
-
-Possible improvements:
-- Toggle coloring mode. Let the user decide when to start coloring.
