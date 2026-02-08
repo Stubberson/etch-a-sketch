@@ -7,5 +7,5 @@ Started as an etch-a-sketch following [The Odin Project](https://www.theodinproj
 * Color picker
 
 > [!note] 
-> Technologies used: HTML5, CSS3, JavaScript
+> Technologies used: HTML5, CSS3, JavaScript <br>
 > [RGB diagram link to original picture.](https://commons.wikimedia.org/wiki/File:The_three_primary_colors_of_RGB_Color_Model_(Red,_Green,_Blue).png)
